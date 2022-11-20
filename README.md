@@ -1,5 +1,8 @@
 Inspired by https://github.com/git-artes/docker-gnuradio
 
+There are different versions here: 
+- vanilla - generic gnuradio with no other additions
+- limesdr - addition of LimeSDR tools
 ## build
 
 To build the container:
