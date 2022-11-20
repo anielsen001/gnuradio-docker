@@ -14,7 +14,17 @@ model name	: ARMv7 Processor rev 5 (v7l)
 model name	: ARMv7 Processor rev 5 (v7l)
 ```
 
+There may be an issue with `libseccomp` on the raspian os
+see https://askubuntu.com/questions/1263284/apt-update-throws-signature-error-in-ubuntu-20-04-container-on-arm
+Download the updated library here:
+```bash
+wget http://ftp.us.debian.org/debian/pool/main/libs/libseccomp/libseccomp2_2.5.4-1+b2_armhf.deb
+```
+and install
 
+```bash
+sudo dpkg -i libseccomp2_2.5.4-1+b2_armhf.deb
+```
 
 # Raspberry pi docker set up
 
