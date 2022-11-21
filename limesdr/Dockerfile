@@ -6,6 +6,9 @@ RUN apt-get update
 # else it will output an error about Gtk namespace not found
 RUN apt-get install -y gir1.2-gtk-3.0
 
+# X11 needs to be installed
+RUN apt-get install -y libx11-dev x11-apps
+
 # to have add-apt-repository available
 RUN apt-get install -y software-properties-common
 
