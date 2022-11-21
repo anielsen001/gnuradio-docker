@@ -17,6 +17,7 @@ services:
       - "/dev/bus/usb/:/dev/bus/usb/"
       - "/data:/data"
     network_mode: "host"
+    privileged: true
     ports:
       - "6000-6063:6000-6063"
     command: 
