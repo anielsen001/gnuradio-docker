@@ -15,7 +15,7 @@ services:
       - "$HOME/.Xauthority:/home/gnuradio/.Xauthority:rw"
       - "/data:/data"
     ports:
-      - "6000:6000"
+      - "6000:6063"
     command: 
       - /bin/bash
 
