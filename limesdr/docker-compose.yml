@@ -8,7 +8,7 @@ services:
       dockerfile: Dockerfile
     environment:
       - DISPLAY
-    image: gnuradio-limesdr:develop
+    image: arm32v7/gnuradio3.8/limesdr:develop
     volumes:
       # passing through this file allows opening windows from the container in your host computer
       - "/tmp/.X11-unix:/tmp/.X11-unix:rw"

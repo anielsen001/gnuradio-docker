@@ -24,7 +24,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends li
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends soapysdr-tools soapysdr-module-lms7
 
 # add gnu-radio apt repository
-RUN add-apt-repository -y ppa:gnuradio/gnuradio-releases
+# currently gr-limesdr supports only gnuradio 3.7 and 3.8
+RUN add-apt-repository -y ppa:gnuradio/gnuradio-releases-3.8
 
 # update apt database after adding gnuradio ppa
 RUN apt-get update
