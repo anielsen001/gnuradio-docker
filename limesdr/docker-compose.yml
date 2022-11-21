@@ -14,8 +14,9 @@ services:
       - "/tmp/.X11-unix:/tmp/.X11-unix:rw"
       - "$HOME/.Xauthority:/home/gnuradio/.Xauthority:rw"
       - "/data:/data"
+    net: "host"
     ports:
-      - "6000:6063"
+      - "6000-6063:6000:6063"
     command: 
       - /bin/bash
 
